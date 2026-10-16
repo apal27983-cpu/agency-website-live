@@ -1,10 +1,12 @@
-﻿{
+{
   "name": "nexora-digital-site",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && node scripts/prepare-vercel.js"
   },
-  "devDependencies": { "tailwindcss": "^3.4.17" }
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
 }
